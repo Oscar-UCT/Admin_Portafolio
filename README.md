@@ -7,4 +7,4 @@ Se debe ingresar con las credenciales entregadas.\
 \
 La página está alojada [acá](https://teclab.uct.cl/~oscar.cariaga/portafolio-admin/login.php) pero es probable que esté caida.\
 \
-Se usó IA para ajustar la parte de mostrar los proyectos en index.php
+Se usó ChatGPT para ajustar la parte de mostrar los proyectos en index.php para que muestre "No se encontraron proyectos" 

@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 03, 2025 at 03:27 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 03-06-2025 a las 20:45:09
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `portafolio`
+-- Base de datos: `portafolio`
 --
+CREATE DATABASE IF NOT EXISTS `portafolio` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `portafolio`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `proyectos`
+-- Estructura de tabla para la tabla `proyectos`
 --
 
 CREATE TABLE `proyectos` (
@@ -38,7 +40,7 @@ CREATE TABLE `proyectos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `proyectos`
+-- Volcado de datos para la tabla `proyectos`
 --
 
 INSERT INTO `proyectos` (`id`, `titulo`, `descripcion`, `url_github`, `url_produccion`, `imagen`, `created_at`) VALUES
@@ -47,7 +49,7 @@ INSERT INTO `proyectos` (`id`, `titulo`, `descripcion`, `url_github`, `url_produ
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Estructura de tabla para la tabla `users`
 --
 
 CREATE TABLE `users` (
@@ -57,40 +59,40 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Volcado de datos para la tabla `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', '1e14a8fa941c60938fd5b80d219bf5c8');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `proyectos`
+-- Indices de la tabla `proyectos`
 --
 ALTER TABLE `proyectos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indices de la tabla `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `proyectos`
+-- AUTO_INCREMENT de la tabla `proyectos`
 --
 ALTER TABLE `proyectos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

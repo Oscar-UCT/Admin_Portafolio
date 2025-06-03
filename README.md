@@ -5,4 +5,6 @@ Para testear de forma local, seleccionar "importar" en Phpmyadmin e importar el 
 \
 Se debe ingresar con las credenciales entregadas.\
 \
-La página está alojada [acá](https://teclab.uct.cl/~oscar.cariaga/portafolio-admin/login.php) pero es probable que esté caida.
+La página está alojada [acá](https://teclab.uct.cl/~oscar.cariaga/portafolio-admin/login.php) pero es probable que esté caida.\
+\
+Se usó IA para ajustar la parte de mostrar los proyectos en index.php
